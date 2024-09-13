@@ -1,0 +1,118 @@
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7e66ea, #c0badf);
+    /* Gradient background with a sophisticated look */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: black;
+    /* Dark background for a modern look */
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f4f4f9;
+    /* Light color for a crisp contrast */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.description {
+    color: #a0aec0;
+    /* Softer grey color for a subtle look */
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    /* Rounded buttons for a friendly feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    background-color: #6c63ff;
+    /* Primary button color */
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #5146c6;
+    /* Slightly darker shade on hover */
+    transform: translateY(-3px);
+    /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+}
+
+a:hover img {
+    transform: scale(1.15);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 0.95em;
+    }
+
+    a {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
